@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://charymeld.github.io/sitemap.xml
+Sitemap: https://charymeld.github.io/Sitemap.xml
 
 # Crawl-delay (optional, helps with server load)
 Crawl-delay: 10
