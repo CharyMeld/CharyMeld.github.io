@@ -44,42 +44,45 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-[#bbbcb6]">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <nav class="bg-white/90 backdrop-blur-sm shadow-lg fixed w-full top-0 z-50 border-b-4 border-gray-800">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-bold text-blue-600">CI</a>
+                    <a href="index.html" class="text-2xl font-bold text-gray-800 border-4 border-gray-800 px-3 py-1 bg-white hover:bg-gray-800 hover:text-white transition">CI</a>
                 </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-gray-800 hover:text-blue-600 font-medium transition">Home</a>
-                    <a href="projects.html" class="text-blue-600 font-medium transition">Projects</a>
-                    <a href="contact.html" class="text-gray-800 hover:text-blue-600 font-medium transition">Contact</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="index.html" class="text-gray-800 hover:text-white hover:bg-gray-800 font-bold transition border-2 border-gray-800 px-4 py-2 bg-white">HOME</a>
+                    <a href="projects.html" class="text-white bg-gray-800 font-bold transition border-2 border-gray-800 px-4 py-2">PROJECTS</a>
+                    <a href="contact.html" class="text-gray-800 hover:text-white hover:bg-gray-800 font-bold transition border-2 border-gray-800 px-4 py-2 bg-white">CONTACT</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button id="mobile-menu-btn" class="text-gray-800 hover:text-blue-600">
-                        <i class="fas fa-bars text-2xl"></i>
+                    <button id="mobile-menu-btn" class="text-gray-800 hover:text-gray-600 border-2 border-gray-800 px-3 py-2 bg-white">
+                        <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <a href="index.html" class="block px-4 py-3 text-gray-800 hover:bg-blue-50">Home</a>
-            <a href="projects.html" class="block px-4 py-3 text-blue-600 bg-blue-50">Projects</a>
-            <a href="contact.html" class="block px-4 py-3 text-gray-800 hover:bg-blue-50">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t-4 border-gray-800">
+            <a href="index.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-200 border-b-2 border-gray-800 font-bold">HOME</a>
+            <a href="projects.html" class="block px-4 py-3 text-white bg-gray-800 border-b-2 border-gray-900 font-bold">PROJECTS</a>
+            <a href="contact.html" class="block px-4 py-3 text-gray-800 hover:bg-gray-200 font-bold">CONTACT</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="pt-32 pb-12 px-4">
         <div class="max-w-6xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">My Projects</h1>
-            <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                Real-world applications built with modern technologies. From church management systems to AI-powered platforms.
-            </p>
+            <div class="bg-white border-4 border-gray-800 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 md:p-12">
+                <h1 class="text-4xl md:text-6xl font-black text-gray-900 mb-4 uppercase tracking-tight">My Projects</h1>
+                <div class="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
+                <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto font-medium">
+                    Real-world applications built with modern technologies. From church management systems to AI-powered platforms.
+                </p>
+            </div>
         </div>
     </section>
 
@@ -89,172 +92,190 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Project 1: CharyMeld Adverts -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-gradient-to-br from-purple-500 to-pink-600 h-48 flex items-center justify-center">
-                        <i class="fas fa-bullhorn text-white text-6xl"></i>
+                <div class="bg-white border-4 border-gray-800 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all overflow-hidden">
+                    <div class="bg-gray-200 h-48 flex items-center justify-center border-b-4 border-gray-800">
+                        <i class="fas fa-bullhorn text-gray-800 text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">CharyMeld Adverts</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-2xl font-black text-gray-900 mb-3 uppercase">CharyMeld Adverts</h3>
+                        <p class="text-gray-700 mb-4 font-medium text-sm">
                             Enterprise classified ads marketplace with payment processing, publisher ad network, AI chatbot, fraud protection, and KYC verification.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Laravel 11</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP 8.2</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">MySQL</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Paystack</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">AI Chatbot</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">LARAVEL 11</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">PHP 8.2</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">MYSQL</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">PAYSTACK</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">AI CHATBOT</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="https://github.com/CharyMeld/charymeld-adverts" target="_blank" class="text-gray-700 hover:text-gray-900 font-semibold">
-                                <i class="fab fa-github mr-1"></i>Code
+                            <a href="https://github.com/CharyMeld/charymeld-adverts" target="_blank" class="bg-gray-800 text-white px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-700 transition">
+                                <i class="fab fa-github mr-1"></i>CODE
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project 2: TeamO Digital Solutions -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-gradient-to-br from-blue-500 to-indigo-600 h-48 flex items-center justify-center">
-                        <i class="fas fa-users-cog text-white text-6xl"></i>
+                <div class="bg-white border-4 border-gray-800 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all overflow-hidden">
+                    <div class="bg-gray-300 h-48 flex items-center justify-center border-b-4 border-gray-800">
+                        <i class="fas fa-users-cog text-gray-800 text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">TeamO Digital Solutions</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-2xl font-black text-gray-900 mb-3 uppercase">TeamO Digital</h3>
+                        <p class="text-gray-700 mb-4 font-medium text-sm">
                             Comprehensive staff management system with attendance tracking, leave requests, task assignment, analytics, and role-based dashboards.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Laravel 11</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Vue.js 3</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Inertia.js</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">LARAVEL 11</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">VUE.JS 3</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">INERTIA.JS</span>
                         </div>
-                        <div class="flex space-x-4">
-                            <a href="https://www.teamodigitalsolutions.com/" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">
-                                <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://www.teamodigitalsolutions.com/" target="_blank" class="bg-gray-800 text-white px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-700 transition">
+                                <i class="fas fa-external-link-alt mr-1"></i>DEMO
                             </a>
-                            <a href="https://github.com/CharyMeld/-TeamODigitalsWebsite" target="_blank" class="text-gray-700 hover:text-gray-900 font-semibold">
-                                <i class="fab fa-github mr-1"></i>Code
+                            <a href="https://github.com/CharyMeld/-TeamODigitalsWebsite" target="_blank" class="bg-white text-gray-800 px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-100 transition">
+                                <i class="fab fa-github mr-1"></i>CODE
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3: WACS Management System -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-gradient-to-br from-teal-500 to-cyan-600 h-48 flex items-center justify-center">
+                <!-- Project 3: CharyMeld Website Rating -->
+                <div class="bg-white border-4 border-gray-800 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all overflow-hidden">
+                    <div class="bg-gray-400 h-48 flex items-center justify-center border-b-4 border-gray-800">
+                        <i class="fas fa-star text-gray-800 text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-black text-gray-900 mb-3 uppercase">Website Rating</h3>
+                        <p class="text-gray-700 mb-4 font-medium text-sm">
+                            Universal Websites Rating Dashboard & Recommendation Dashboard with comprehensive analytics and rating system.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">CODEIGNITER 3</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">PHP 8.2</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">APACHE</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://website-rating.teamodigitalsolutions.com" target="_blank" class="bg-gray-800 text-white px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-700 transition">
+                                <i class="fas fa-external-link-alt mr-1"></i>DEMO
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: WACS Management System -->
+                <div class="bg-white border-4 border-gray-800 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all overflow-hidden">
+                    <div class="bg-gray-500 h-48 flex items-center justify-center border-b-4 border-gray-800">
                         <i class="fas fa-graduation-cap text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">WACS Management System</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-2xl font-black text-gray-900 mb-3 uppercase">WACS System</h3>
+                        <p class="text-gray-700 mb-4 font-medium text-sm">
                             West African College of Physicians management system with AI assistant, document processing, OCR, candidate management, and analytics.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-orange-100 text-orange-800 text-xs px-3 py-1 rounded-full">CodeIgniter</span>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">AI Assistant</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">OCR</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">CODEIGNITER</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">PHP</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">AI</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">OCR</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="https://wacs.teamodigitalsolutions.com/" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">
-                                <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                            <a href="https://wacs.teamodigitalsolutions.com/" target="_blank" class="bg-gray-800 text-white px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-700 transition">
+                                <i class="fas fa-external-link-alt mr-1"></i>DEMO
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 4: TRAC Website -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-gradient-to-br from-green-600 to-teal-700 h-48 flex items-center justify-center">
+                <!-- Project 5: TRAC Website -->
+                <div class="bg-white border-4 border-gray-800 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all overflow-hidden">
+                    <div class="bg-gray-600 h-48 flex items-center justify-center border-b-4 border-gray-800">
                         <i class="fas fa-chart-line text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">TRAC Research Collective</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-2xl font-black text-gray-900 mb-3 uppercase">TRAC Research</h3>
+                        <p class="text-gray-700 mb-4 font-medium text-sm">
                             Research consultancy website with dynamic event management, resource library, impact dashboard, and client portal showcasing 235+ partners.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">MySQL</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Chart.js</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Analytics</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">PHP</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">MYSQL</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">CHART.JS</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="https://trac.teamodigitalsolutions.com/" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">
-                                <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                            <a href="https://tracafrica.com/" target="_blank" class="bg-gray-800 text-white px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-700 transition">
+                                <i class="fas fa-external-link-alt mr-1"></i>DEMO
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 5: NKST Makurdi Central Church -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 h-48 flex items-center justify-center">
+                <!-- Project 6: NKST Makurdi Central Church -->
+                <div class="bg-white border-4 border-gray-800 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all overflow-hidden">
+                    <div class="bg-gray-700 h-48 flex items-center justify-center border-b-4 border-gray-800">
                         <i class="fas fa-church text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">NKST Church Management</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-2xl font-black text-gray-900 mb-3 uppercase">NKST Church</h3>
+                        <p class="text-gray-700 mb-4 font-medium text-sm">
                             Comprehensive church management system with social feed, payment processing, ward management, role-based dashboards, and visitor analytics.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">MySQL</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">JavaScript</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Social Feed</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">PHP</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">MYSQL</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">JAVASCRIPT</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="https://nkstmkdcentral.teamoranch.com/" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">
-                                <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                            <a href="https://nkstmkdcentral.teamoranch.com/" target="_blank" class="bg-gray-800 text-white px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-700 transition">
+                                <i class="fas fa-external-link-alt mr-1"></i>DEMO
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 6: TeamO Ranch -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-gradient-to-br from-green-500 to-lime-600 h-48 flex items-center justify-center">
-                        <i class="fas fa-seedling text-white text-6xl"></i>
+                <!-- Project 7: TeamO Ranch -->
+                <div class="bg-white border-4 border-gray-800 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all overflow-hidden">
+                    <div class="bg-gray-300 h-48 flex items-center justify-center border-b-4 border-gray-800">
+                        <i class="fas fa-seedling text-gray-800 text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">TeamO Ranch</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-2xl font-black text-gray-900 mb-3 uppercase">TeamO Ranch</h3>
+                        <p class="text-gray-700 mb-4 font-medium text-sm">
                             Sustainable farm e-commerce platform offering fresh products (chickens, fish, eggs), hatchery services, catering, and zero-waste solutions.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">PHP</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">MySQL</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Alpine.js</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">PHP</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">MYSQL</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">TAILWIND</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="https://teamoranch.com/" target="_blank" class="text-blue-600 hover:text-blue-800 font-semibold">
-                                <i class="fas fa-external-link-alt mr-1"></i>Live Demo
+                            <a href="https://teamoranch.com/" target="_blank" class="bg-gray-800 text-white px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-700 transition">
+                                <i class="fas fa-external-link-alt mr-1"></i>DEMO
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 7: CharyMeld AI Code Assistant -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="bg-gradient-to-br from-violet-500 to-fuchsia-600 h-48 flex items-center justify-center">
-                        <i class="fas fa-robot text-white text-6xl"></i>
+                <!-- Project 8: CharyMeld AI Code Assistant -->
+                <div class="bg-white border-4 border-gray-800 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] transition-all overflow-hidden">
+                    <div class="bg-gray-400 h-48 flex items-center justify-center border-b-4 border-gray-800">
+                        <i class="fas fa-robot text-gray-800 text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3">CharyMeld AI Assistant</h3>
-                        <p class="text-gray-600 mb-4">
+                        <h3 class="text-2xl font-black text-gray-900 mb-3 uppercase">AI Assistant</h3>
+                        <p class="text-gray-700 mb-4 font-medium text-sm">
                             Local multi-language AI code assistant with CLI and web interface. Uses LangChain and Ollama to run open-source models locally.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Python</span>
-                            <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">LangChain</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Ollama</span>
-                            <span class="bg-pink-100 text-pink-800 text-xs px-3 py-1 rounded-full">Flask</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">PYTHON</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">LANGCHAIN</span>
+                            <span class="bg-white border-2 border-gray-800 text-gray-800 text-xs px-3 py-1 font-bold">OLLAMA</span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="https://github.com/CharyMeld" target="_blank" class="text-gray-700 hover:text-gray-900 font-semibold">
-                                <i class="fab fa-github mr-1"></i>Code
+                            <a href="https://github.com/CharyMeld" target="_blank" class="bg-gray-800 text-white px-4 py-2 font-bold border-2 border-gray-800 hover:bg-gray-700 transition">
+                                <i class="fab fa-github mr-1"></i>CODE
                             </a>
                         </div>
                     </div>
@@ -265,48 +286,51 @@
     </section>
 
     <!-- Stats Section -->
-    <section class="py-16 bg-white px-4">
+    <section class="py-16 px-4">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Project Statistics</h2>
+            <h2 class="text-3xl font-black text-center text-gray-900 mb-12 uppercase bg-white border-4 border-gray-800 py-4 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">Project Statistics</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-blue-600 mb-2">7+</div>
-                    <div class="text-gray-600">Projects Completed</div>
+                <div class="text-center bg-white border-4 border-gray-800 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <div class="text-4xl font-black text-gray-800 mb-2">8+</div>
+                    <div class="text-gray-700 font-bold uppercase text-sm">Projects Completed</div>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-purple-600 mb-2">5+</div>
-                    <div class="text-gray-600">Live Websites</div>
+                <div class="text-center bg-white border-4 border-gray-800 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <div class="text-4xl font-black text-gray-800 mb-2">7+</div>
+                    <div class="text-gray-700 font-bold uppercase text-sm">Live Websites</div>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-green-600 mb-2">12+</div>
-                    <div class="text-gray-600">Technologies Used</div>
+                <div class="text-center bg-white border-4 border-gray-800 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <div class="text-4xl font-black text-gray-800 mb-2">12+</div>
+                    <div class="text-gray-700 font-bold uppercase text-sm">Technologies Used</div>
                 </div>
-                <div class="text-center">
-                    <div class="text-4xl font-bold text-orange-600 mb-2">100%</div>
-                    <div class="text-gray-600">Client Satisfaction</div>
+                <div class="text-center bg-white border-4 border-gray-800 p-6 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]">
+                    <div class="text-4xl font-black text-gray-800 mb-2">100%</div>
+                    <div class="text-gray-700 font-bold uppercase text-sm">Client Satisfaction</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="py-20 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
+    <section class="py-20 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold text-white mb-4">Interested in Working Together?</h2>
-            <p class="text-xl text-blue-100 mb-8">
-                I'm always open to discussing new projects and opportunities.
-            </p>
-            <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg inline-block">
-                Get in Touch
-            </a>
+            <div class="bg-white border-4 border-gray-800 shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] p-8 md:p-12">
+                <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 uppercase">Interested in Working Together?</h2>
+                <div class="w-24 h-1 bg-gray-800 mx-auto mb-6"></div>
+                <p class="text-lg md:text-xl text-gray-700 mb-8 font-medium">
+                    I'm always open to discussing new projects and opportunities.
+                </p>
+                <a href="contact.html" class="bg-gray-800 text-white px-8 py-3 font-bold hover:bg-gray-700 transition shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] border-2 border-gray-800 uppercase inline-block">
+                    Get in Touch
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 px-4">
+    <footer class="bg-gray-800 text-white py-8 px-4 border-t-4 border-gray-900">
         <div class="max-w-6xl mx-auto text-center">
-            <p class="mb-2">&copy; 2025 Charles I. Ikyese. All rights reserved.</p>
-            <p class="text-gray-400">Built with HTML, TailwindCSS, and GitHub Pages</p>
+            <p class="mb-2 font-bold">&copy; 2025 Charles I. Ikyese. All rights reserved.</p>
+            <p class="text-gray-300 font-medium">Built with HTML, TailwindCSS, and GitHub Pages</p>
         </div>
     </footer>
 
